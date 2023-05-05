@@ -5,10 +5,6 @@ This is a terminal project made in Node.js integrated with the Artificial Intell
 
 This project is a demonstration of how to use the OpenAI APIs and their set of Artificial Intelligence tools. The project implements the `createCompletion`, `createImage`, `createChatCompletions`, `createEmbedding`, `createTranscription` and `createTranslation` APIs.
 
-<p align="center">
-  <img src="https://philna.sh/_astro/openai-node-social.19d97db0.png" alt="openai-logo">
-</p>
-
 ## Getting Started
 
 **Requirements**
