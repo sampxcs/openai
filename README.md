@@ -1,12 +1,11 @@
 # Node.js & OpenAI AI Terminal Project
 **This readme.md was written by the artificial intelligence of OpenAI.**
+This is a terminal project made in Node.js integrated with the Artificial Intelligence tools of the OpenAI API.
 
 <img src="/media/chat.gif" width="49%"></img>
 <img src="/media/moderation.gif" width="49%"></img>
 
-This is a terminal project made in Node.js integrated with the Artificial Intelligence tools of the OpenAI API.
-
-This project is a demonstration of how to use the OpenAI APIs and their set of Artificial Intelligence tools. The project implements the `createCompletion`, `createImage`, `createChatCompletions`, `createEmbedding`, `createTranscription` and `createTranslation` APIs.
+This project is a demonstration of how to use the OpenAI APIs and their set of Artificial Intelligence tools. The project implements the `createCompletion`, `createImage`, `createChatCompletions`, `createEdit`, `createModeration`, `createTranscription` and `createTranslation` APIs.
 
 ## Getting Started
 
