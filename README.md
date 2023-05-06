@@ -1,8 +1,8 @@
 # Node.js & OpenAI AI Terminal Project
 **This readme.md was written by the artificial intelligence of OpenAI.**
 
-<img src="/media/chat.gif" width=380></img>
-<img src="/media/moderation.gif" width=380></img>
+<img src="/media/chat.gif" width="49%"></img>
+<img src="/media/moderation.gif" width="49%"></img>
 
 This is a terminal project made in Node.js integrated with the Artificial Intelligence tools of the OpenAI API.
 
