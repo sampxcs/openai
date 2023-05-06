@@ -1,11 +1,11 @@
 import prompts from 'prompts'
-import colors from '@colors/colors/safe.js'
+import { bgMagenta } from 'console-log-colors'
 import ora from 'ora'
 import { exitValidation, inputPropmt } from '../utils.js'
 
 export default async function createCompletion (openai) {
-  console.log(colors.bgMagenta(' >> Generar Texto \n'))
-  console.log('Crea un texto a partir de una solicitud dada\n')
+  console.log(bgMagenta.bold(' >> Generate text \n'))
+  console.log('Creates a completion for the provided prompt\n')
 
   while (true) {
     const { value } = await prompts(inputPropmt)
@@ -14,11 +14,11 @@ export default async function createCompletion (openai) {
       if (await exitValidation()) break
       continue
     }
-    if (value === 'clear') {
+    if (value === 'clear' || value === 'cls') {
       console.clear()
       continue
     }
-    const spinner = ora('Loading...').start()
+    const spinner = ora('Cargando...').start()
     try {
       const res = await openai.createCompletion({
         model: 'text-davinci-003',

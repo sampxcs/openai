@@ -4,14 +4,14 @@ export const inputPropmt = {
   type: 'text',
   name: 'value',
   message: '',
-  validate: value => !value ? 'Ingresa un valor por favor' : true
+  validate: value => !value ? 'Enter a value please' : true
 }
 
 export const exitValidation = async () => {
   const { value } = await prompts({
     type: 'toggle',
     name: 'value',
-    message: 'Seguro que quiere salir?',
+    message: 'Are you sure you want to go out?',
     initial: true,
     active: 'yes',
     inactive: 'no'

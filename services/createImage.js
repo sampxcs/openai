@@ -1,11 +1,11 @@
 import prompts from 'prompts'
-import colors from '@colors/colors/safe.js'
+import { bgMagenta, green } from 'console-log-colors'
 import ora from 'ora'
 import { exitValidation, inputPropmt } from '../utils.js'
 
 export default async function createImage (openai) {
-  console.log(colors.bgMagenta(' >> Generar Imagen \n'))
-  console.log(`Describe la imagen que quieres que la ${colors.green('Inteligencia Artificial')} cree\n`)
+  console.log(bgMagenta.bold(' >> Generate image \n'))
+  console.log(`Describe the image you want ${green('Artificial Intelligence')} to create\n`)
 
   while (true) {
     const { value } = await prompts(inputPropmt)
@@ -14,11 +14,11 @@ export default async function createImage (openai) {
       if (await exitValidation()) break
       continue
     }
-    if (value === 'clear') {
+    if (value === 'clear' || value === 'cls') {
       console.clear()
       continue
     }
-    const spinner = ora('Loading...').start()
+    const spinner = ora('Cargando...').start()
     try {
       const res = await openai.createImage({
         prompt: value,

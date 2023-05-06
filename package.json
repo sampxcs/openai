@@ -10,6 +10,7 @@
   "author": "Nilkarbis Quiroz, Ian Rosales",
   "license": "ISC",
   "dependencies": {
+    "console-log-colors": "0.4.0",
     "dotenv": "16.0.3",
     "openai": "3.2.1",
     "ora": "6.3.0",
